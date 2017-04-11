@@ -1,12 +1,12 @@
+function submitForm () {
+	document.getElementById('email-form').submit();
+	document.getElementById('email-field').value = '';
+	document.getElementById('email-field').style.pointerEvents = 'none';
+	document.getElementById('email-label').style.textAlign = 'center';
+	document.getElementById('email-label').innerHTML = 'Thank you!';
+	document.getElementById('submit-email').style.visibility = 'hidden';
+}
 window.onload = function () {
-	function submitForm () {
-		document.getElementById('email-form').submit();
-		document.getElementById('email-field').value = '';
-		document.getElementById('email-field').style.pointerEvents = 'none';
-		document.getElementById('email-label').style.textAlign = 'center';
-		document.getElementById('email-label').innerHTML = 'Thank you!';
-		document.getElementById('submit-email').style.visibility = 'hidden';
-	}
 
 	var modal = document.getElementsByClassName('modal')[0];
 	var snapchat = document.getElementById('snapchat-modal');
